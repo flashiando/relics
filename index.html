@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    <script src="scripts.js"></script>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Kufam&family=Oswald:wght@600&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/32x32.png" sizes="32x32">
+    <link rel="icon" href="images/192x192.png" sizes="192x192">
+
+    <title>Progressive</title>
+
+</head>
+
+<body class="d-flex flex-column h-100">
+
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark-08 sticky-top shadow animated fadeIn delay-025s">
+        <div class="container">
+            <a class="navbar-brand" href="index.html"> <img src="images/xx.png" alt="logo">
+            </a>
+            <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#menuColapsable" aria-controls="#menuColapsable" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuColapsable">
+                <ul class="navbar-nav ml-auto text-uppercase">
+
+                    <li class="nav-item ml-auto text-right active">
+                        <a class="nav-link fancy-link" href="historias.html">
+                            <div>
+                                <i class="fas fa-book"></i> </br> Leer
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right">
+                        <a class="nav-link disabled" href="blog.html">
+                            <div>
+                                <i class="fas fa-edit"></i> </br> Blog
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right">
+                        <a class="nav-link disabled" href="equipo.html">
+                            <div>
+                                <i class="fas fa-user-friends"></i> </br> Equipo
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right">
+                        <a class="nav-link disabled" href="galeria.html">
+                            <div>
+                                <i class="fas fa-images"></i> </br> Galeria
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ml-auto text-right">
+                        <a class="nav-link fancy-link" data-toggle="modal" data-target="#formularioModal">
+                            <div>
+                                <i class="fas fa-handshake"></i> </br> Contacto
+                            </div>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+
+        </div>
+    </nav>
+
+    <main role="main" class="flex-shrink-0">
+
+        <section id="tapas" class="animated fadeIn delay-075s d-flex flex-wrap justify-content-around m-5 p-5">
+
+            <!--
+            <div class="card shadow">
+                <div class="front">
+                    <img src="images/pu.jpg">
+                </div>
+                <div class="back d-flex flex-wrap justify-content-center align-content-center">
+                    <<div class="back-content py-4 d-flex flex-wrap justify-content-center align-content-center">
+                        <h1 class="titulos">Historia 1</h1>
+                        <p class="px-3 pt-4 pb-2 m-0 align-middle text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi.
+                            <a class="fancy-link" href="./0001.html">asdfasdfasfdas </a> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa
+                        </p>
+                        <a href="" class="btn btn1">Hover Me</a>
+                </div>
+            </div>
+            </div>
+
+            <div class="card shadow">
+                <div class="front">
+                    <img src="images/pu.jpg">
+                </div>
+                <div class="back d-flex flex-wrap justify-content-center align-content-center">
+                    <<div class="back-content py-4">
+                        <h1 class="titulos">Historia 2</h1>
+                        <p class="px-3 pt-4 pb-2 m-0 align-middle text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi.
+                            <a class="fancy-link" href="./0001.html">asdfasdfasfdas </a> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa
+                        </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="card shadow">
+                <div class="front">
+                    <img src="images/pu.jpg">
+                </div>
+                <div class="back d-flex flex-wrap justify-content-center align-content-center">
+                    <<div class="back-content py-4">
+                        <h1 class="titulos">Historia 3</h1>
+                        <p class="px-3 pt-4 pb-2 m-0 align-middle text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi.
+                            <a class="fancy-link" href="./0001.html">asdfasdfasfdas </a> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa
+                        </p>
+                </div>
+            </div>
+            </div>
+
+            <div class="card shadow">
+                <div class="front">
+                    <img src="images/pu.jpg">
+                </div>
+                <div class="back d-flex flex-wrap justify-content-center align-content-center">
+                    <<div class="back-content py-4 d-flex flex-wrap justify-content-center align-content-center">
+                        <h1 class="titulos">Historia 4</h1>
+                        <p class="px-3 pt-4 pb-2 m-0 align-middle text-justify">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi.
+                            <a class="fancy-link" href="./0001.html">asdfasdfasfdas </a> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa
+                        </p>
+                </div>
+            </div>
+            </div>
+-->
+
+
+        </section>
+
+    </main>
+
+    <footer class="footer mt-auto">
+
+        <div class="animated fadeIn delay-125s bg-dark-08 text-white py-2 align-middle text-center">
+            Copyright 2020 © Progressive.
+
+            <a href="#">
+                <i class="fas fa-rss-square text-danger"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-facebook-square text-primary"></i>
+            </a>
+
+            <a href="#">
+                <i class="fab fa-instagram text-warning"></i>
+            </a>
+
+        </div>
+
+    </footer>
+
+    <!-- Modal contacto -->
+    <!-- Modal contacto -->
+
+    <div class="modal fade" id="formularioModal" data-backdrop="static" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="formularioModalLabel" aria-hidden="true">
+        <div id="custom" class="modal-dialog modal-lg modal-dialog-centered align-items-center" role="document">
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <span id="mod1en" class="d-none">
+                        <h5 class="modal-title text-dark" id="formularioModalLabel">Contact us</h5>
+                    </span>
+                    <span id="mod1es" class="">
+                        <h5 class="modal-title text-dark" id="formularioModalLabel">Contactanos</h5>
+                    </span>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onmouseup="clearForm()" ontouchend="clearForm()">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                    <div id="sentSuccess" class="d-none col-12 my-2">
+                        <i class="far fa-check-circle text-success d-flex justify-content-center iconoEnv py-2"></i>
+                        <p id="mod20en" class="col-12 text-center text-dark d-none">Message sent succefully</p>
+                        <p id="mod20es" class="col-12 text-center text-dark">Se ha enviado su mensaje con exito</p>
+                    </div>
+
+                    <form class="needs-validation" name="consulta" action="contact.php" method="get" id="myForm">
+                        <div class="form-row">
+                            <div class="form-group col-sm-12 col-lg-6">
+                                <label id="mod2en" class="d-none text-dark" for="validationCustom01">First name</label>
+                                <label id="mod2es" class="text-dark" for="validationCustom01">Nombre</label>
+                                <input name="nombre" type="text" class="form-control" id="validationCustom01" required>
+                                <div id="mod3en" class="d-none valid-feedback text-dark">
+                                    Looks good!
+                                </div>
+                                <div id="mod3es" class="valid-feedback text-dark">
+                                    Se ve bien!
+                                </div>
+                                <div id="mod4en" class="d-none invalid-feedback text-dark">
+                                    Invalid Name.
+                                </div>
+                                <div id="mod4es" class="invalid-feedback text-dark">
+                                    Nombre Invalido.
+                                </div>
+                            </div>
+                            <div class="form-group col-sm-12 col-lg-6">
+                                <label id="mod5en" class="d-none text-dark" for="validationCustom02">Last name</label>
+                                <label id="mod5es" class="text-dark" for="validationCustom02">Apellido</label>
+                                <input name="apellido" type="text" class="form-control" id="validationCustom02" required>
+                                <div id="mod6en" class="d-none valid-feedback text-dark">
+                                    Looks good!
+                                </div>
+                                <div id="mod6es" class="valid-feedback text-dark">
+                                    Se ve bien!
+                                </div>
+                                <div id="mod7en" class="d-none invalid-feedback text-dark">
+                                    Invalid Lastname.
+                                </div>
+                                <div id="mod7es" class="invalid-feedback text-dark">
+                                    Apellido Invalido</div>
+                            </div>
+                            <div class="form-group col-12">
+                                <label id="mod8en" class="d-none text-dark" for="exampleInputEmail1">Email address</label>
+                                <label id="mod8es" class="text-dark" for="exampleInputEmail1">Direccion de Email</label>
+                                <input name="email" type="email" class="form-control text-dark" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+
+                                <span id="mod9en" class="d-none"><small id="emailHelp"
+                                        class="form-text text-muted text-dark">We'll never share
+                                        your email with
+                                        anyone else.</small></span>
+                                <span id="mod9es"><small id="emailHelp" class="form-text text-muted">Nosotros nunca
+                                        compartiremos tu email con nadie.</small></span>
+                                <div id="mod10en" class="d-none valid-feedback">
+                                    Looks good!
+                                </div>
+                                <div id="mod10es" class="valid-feedback">
+                                    Se ve bien!
+                                </div>
+                                <div id="mod11en" class="d-none invalid-feedback">
+                                    Invalid email.
+                                </div>
+                                <div id="mod11es" class="invalid-feedback">
+                                    Email invalido.
+                                </div>
+                            </div>
+
+                            <div class="form-group col-12">
+                                <div class="form-check">
+                                    <input class="form" type="checkbox" value="" id="defaultCheck1" onchange="showContent()">
+                                    <label id="mod12en" class="d-none form-check-label text-dark" for="defaultCheck1">
+                                        I would like to receive a call
+                                    </label>
+                                    <label id="mod12es" class="form-check-label text-dark" for="defaultCheck1">
+                                        Deseo recibir una llamada
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div id="datosTelefono" class="form-row col-12 d-none">
+                                <div class="form-group col-sm-12 col-lg-6">
+                                    <label id="mod13en" for="inputPhone" class="d-none text-dark">Phone</label>
+                                    <label id="mod13es" for="inputPhone" class="text-dark">Telefono</label>
+                                    <input name="telefono" type="text" class="form-control" id="inputPhone" required>
+                                </div>
+                                <div class="form-group col-sm-12 col-lg-6">
+                                    <label id="mod14en" for="inputTime" class="d-none text-dark">Preferred calling times</label>
+                                    <label id="mod14es" for="inputTime" class="text-dark">Hora que desea recibir la llamada</label>
+                                    <input name="time" type="text" class="form-control" id="inputTime" required>
+                                </div>
+                            </div>
+
+                            <div class="form-group mb-0 col-12">
+                                <label id="mod15en" class="d-none text-dark" for="Textarea1">Comments</label>
+                                <label id="mod15es" class="text-dark" for="Textarea1">Comentarios</label>
+                                <textarea name="mensaje" class="form-control" id="Textarea1" rows="3" required></textarea>
+                                <div id="mod16en" class="d-none valid-feedback pb-3">
+                                    Looks good!
+                                </div>
+                                <div id="mod16es" class="valid-feedback pb-3">
+                                    Se ve bien!
+                                </div>
+                                <div id="mod17en" class="d-none invalid-feedback pb-3">
+                                    Invalid comments.
+                                </div>
+                                <div id="mod17es" class="invalid-feedback pb-3">
+                                    Comentario invalido.
+                                </div>
+                                <div class="modal-footer py-2">
+                                    <button id="mod18en" type="button" class="d-none btn btn-secondary" data-dismiss="modal" onmouseup="clearForm()" ontouchend="clearForm()">Close</button>
+                                    <button id="mod18es" type="button" class="btn btn-secondary mx-2 my-0" data-dismiss="modal" onmouseup="clearForm()" ontouchend="clearForm()">Cerrar</button>
+                                    <button id="mod19en" type="button" class="d-none btn btn-primary" onmouseup="enviarMail()" ontouchend="enviarMail()">Send</button>
+                                    <button id="mod19es" type="button" class="btn btn-primary mx-2 my-0" onmouseup="enviarMail()" ontouchend="enviarMail()">Enviar</button>
+                                </div>
+                            </div>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</body>
+
+</html>

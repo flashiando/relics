@@ -1,0 +1,243 @@
+/* generales */
+
+
+/* generales */
+
+body {
+    color: white;
+    font-family: 'Kufam', cursive;
+    background-color: rgba(40, 40, 40, 1);
+}
+
+.bg-dark-08 {
+    background-color: rgba(12, 12, 12, 0.8);
+}
+
+.opacity-0 {
+    opacity: 0;
+}
+
+.opacity-05 {
+    opacity: 0.5;
+}
+
+.opacity-1 {
+    opacity: 1;
+}
+
+
+/* links */
+
+
+/* links */
+
+.fancy-link {
+    text-decoration: none !important;
+    color: #ee6352;
+    position: relative;
+    cursor: pointer;
+}
+
+.fancy-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 350ms ease-in;
+}
+
+.fancy-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+a.fancy-link:hover {
+    color: #ee6352;
+}
+
+a.fancy-link:visited {
+    color: #ee6352;
+}
+
+
+/* navbar */
+
+
+/* navbar */
+
+.navbar {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* footer */
+
+
+/* footer */
+
+footer {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/* principal */
+
+
+/* principal */
+
+#generalWbackground {
+    background: no-repeat url("../images/nasa-Q1p7bh3SHj8-unsplash.png");
+    background-position: top;
+    width: 100%;
+}
+
+#entradas {
+    background: white;
+    color: black;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    border: thick solid black;
+    font-size: 12px;
+}
+
+@media screen and (min-width: 601px) {
+    #entradas {
+        font-size: 16px;
+    }
+}
+
+.titulos {
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+}
+
+@media screen and (min-width: 601px) {
+    .titulos {
+        font-size: 40px;
+    }
+}
+
+
+/* boton */
+
+
+/* boton */
+
+.btn {
+    position: relative;
+    display: block;
+    color: white;
+    font-size: 14px;
+    font-family: 'Oswald', sans-serif;
+    text-decoration: none;
+    margin: 30px 0;
+    border: 2px solid #ee6352;
+    padding: 14px 60px;
+    text-transform: uppercase;
+    overflow: hidden;
+    transition: all 1s ease;
+}
+
+.btn::before {
+    background: #ee6352;
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: all 0.6s ease;
+}
+
+.btn1 {
+    color: black;
+    width: 250px;
+    height: 55px;
+}
+
+.btn1:hover {
+    color: white;
+}
+
+.btn1::before {
+    width: 260%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btn1:hover::before {
+    height: 1000%;
+}
+
+.btn3::before {
+    width: 100%;
+    height: 0%;
+    transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.btn3:hover::before {
+    height: 2000%;
+}
+
+
+/* tarjetas */
+
+
+/*
+
+.card {
+    cursor: pointer;
+    width: 365px;
+    height: 530px;
+    background: transparent;
+    border: thick solid black;
+}
+
+.front,
+.back {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    transition: transform 0.6s linear;
+}
+
+.front img {
+    height: 100%;
+}
+
+.front {
+    transform: perspective(700px) rotateY(0deg);
+}
+
+.back {
+    background: white;
+    transform: perspective(700px) rotateY(180deg);
+}
+
+.back-content {
+    color: black;
+    text-align: center;
+    width: 90%;
+    height: 93%;
+    border: thin solid black;
+}
+
+.card:hover>.front {
+    transform: perspective(700px) rotateY(-180deg);
+}
+
+.card:hover>.back {
+    transform: perspective(700px) rotateY(0deg);
+}
+
+*/
+
+
+/* tarjetas */
