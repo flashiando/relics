@@ -132,16 +132,6 @@ a.fancy-link:visited {
 }
 
 
-/* boton */
-
-
-/* boton */
-
-.buttonIndex {
-    margin-top: 450px;
-}
-
-
 /* tarjetas2 */
 
 
@@ -238,4 +228,20 @@ a.fancy-link:visited {
 
 .imgGale:hover {
     transform: scale(1.1) translateZ(0);
+}
+
+
+/* dropdown */
+
+
+/* dropdown */
+
+#dropdownMenuButton {
+    width: 250px;
+}
+
+@media screen and (min-width: 601px) {
+    #dropdownMenuButton {
+        width: 400px;
+    }
 }
