@@ -188,6 +188,10 @@ a.fancy-link:visited {
     background: url('../images/leer0002.jpg') no-repeat;
 }
 
+.fondo0004 {
+    background: url('../images/leer0004.jpg') no-repeat;
+}
+
 .tarjeta:hover .fondo {
     transform: scale(1.05) translateZ(0);
     filter: blur(0px);
