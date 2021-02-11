@@ -6,12 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- CSS only -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
 
-    <!-- JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
     <script src="scripts.js"></script>
 
@@ -30,24 +28,35 @@
 
     <nav class="navbar navbar-dark navbar-expand-lg bg-dark-08 sticky-top shadow animated fadeIn delay-025s">
         <div class="container">
-            <a class="navbar-brand" href="index.html"> <img src="images/xx.png" alt="logo">
+            <a class="navbar-brand" href="index.html">
+                <picture>
+
+                    <img src="./images/progressivelogo.png" alt="Progressive">
+                </picture>
             </a>
-            <button class=" navbar-toggler" type="button" data-toggle="collapse" data-target="#menuColapsable" aria-controls="#menuColapsable" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuColapsable" aria-controls="menuColapsable" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
             <div class="collapse navbar-collapse" id="menuColapsable">
-                <ul class="navbar-nav ml-auto text-uppercase">
+                <ul class="navbar-nav ms-auto text-uppercase">
 
-                    <li class="nav-item ml-auto text-right active">
+                    <li class="nav-item ms-auto text-end active">
                         <a class="nav-link fancy-link" href="historias.html">
                             <div>
-                                <i class="fas fa-book"></i> </br> Leer
+                                <i class="far fa-eye"></i> </br> Leer
                             </div>
                         </a>
                     </li>
 
-                    <li class="nav-item ml-auto text-right">
+                    <li class="nav-item ms-auto text-end">
+                        <a class="nav-link" href="notas.html">
+                            <div>
+                                <i class="fas fa-book"></i> </br> notas
+                            </div>
+                        </a>
+                    </li>
+
+                    <li class="nav-item ms-auto text-end">
                         <a class="nav-link disabled" href="blog.html">
                             <div>
                                 <i class="fas fa-edit"></i> </br> Blog
@@ -55,7 +64,7 @@
                         </a>
                     </li>
 
-                    <li class="nav-item ml-auto text-right">
+                    <li class="nav-item ms-auto text-end">
                         <a class="nav-link disabled" href="equipo.html">
                             <div>
                                 <i class="fas fa-user-friends"></i> </br> Equipo
@@ -63,16 +72,16 @@
                         </a>
                     </li>
 
-                    <li class="nav-item ml-auto text-right">
-                        <a class="nav-link disabled" href="galeria.html">
+                    <li class="nav-item ms-auto text-end">
+                        <a class="nav-link" href="galeria.html">
                             <div>
                                 <i class="fas fa-images"></i> </br> Galeria
                             </div>
                         </a>
                     </li>
 
-                    <li class="nav-item ml-auto text-right">
-                        <a class="nav-link fancy-link" data-toggle="modal" data-target="#formularioModal">
+                    <li class="nav-item ms-auto text-end">
+                        <a class="nav-link fancy-link" data-bs-toggle="modal" data-bs-target="#formularioModal">
                             <div>
                                 <i class="fas fa-handshake"></i> </br> Contacto
                             </div>
@@ -81,9 +90,9 @@
 
                 </ul>
             </div>
-
         </div>
     </nav>
+
 
     <main role="main" class="flex-shrink-0">
 
@@ -91,30 +100,25 @@
 
             <div id="entradas" class="col-lg-8 col-sm-12 mt-5 mb-4">
 
-                <p class="pt-5 pb-0 px-sm-2 px-lg-5 text-right text-muted align-middle m-0">2020, Septiembre 22</p>
-                <h1 class="px-sm-2 px-lg-5 pt-2 pb-4 m-0 align-middle titulos">#0001 . TITULO 1</h1>
-                <img src="images/nasa--hI5dX2ObAs-unsplash.jpg" class="w-100 px-0">
+                <p class="pt-5 pb-0 px-sm-2 px-lg-5 text-end text-muted align-middle m-0">2021, Febrero 1</p>
+                <h1 class="px-sm-2 px-lg-5 pt-2 pb-4 m-0 align-middle titulos">#0001 . EN LA CUEVA</h1>
+                <img src="images/reliquias0001.jpg" class="w-100 px-0">
 
-                <p class="px-sm-2 px-sm-2 px-lg-5 pt-5 pb-2 m-0 align-middle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi. <a class="fancy-link"
-                        href="#">asdfasdfasfdas asdfasdfasd dfasdfasdfasdfasdfasdf </a> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur
-                    voluptatum voluptate eaque impedit sunt esse rem nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur
-                    voluptatum voluptate eaque impedit sunt esse rem nisi. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur
-                    voluptatum voluptate eaque impedit sunt esse rem nisi.
+                <p class="px-sm-2 px-sm-2 px-lg-5 pt-5 pb-2 m-0 align-middle">Ves la entrada y ya sabes que puede haber dentro, dubitativo bajas el paso pero no frenas y luego de caminar unos minutos con poca claridad y otros casi a ciegas, distingues una luz que claramente no es natural. Te acercas en silencio
+                    desde la sombra, todos tus sentidos estan alertas, tus pupilas estan dilatadas al maximo: las manos sienten la porosidad de las rocas, hay un olor desagradable e intenso, sientes el ruido de cada pequeña gravilla deslizando bajo tus
+                    pies y otros ruidos desde mas lejos, no son muy fuertes pero ahi estan y no los estas generando tu, unos pasos mas y ahí lo ves, es el hombre que ibas siguiendo desde el bosque, el tipo es de estatura mediana y complexión robusta con
+                    algunas cicatrices en la cara, esta ahí parado en lo que parece ser un cúmulo de cadáveres de personas y monstruos, terminando de envolver algo en un trapo harapiento. - No hay necesidad de pelear en un lugar como este, sabes?... lo
+                    que habita estas cuevas es muy peligroso, ni siquiera creo que valga la pena si lo que tienes ahí es lo que yo pienso - le dices cuando sorprendido se da vuelta hacia donde estas, a unos 2 metros de distancia del sujeto. Pero el extraño
+                    tiene un aura oscura. Y sin mediar palabra te mira fijamente mientras una de sus manos lleva "eso" a su bolsillo izquierdo y empieza a mover la otra hacia el interior de su chaleco.
                 </p>
-                <p class="px-sm-2 px-lg-5 py-2 m-0 align-middle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi. Lorem,
-                    ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi. Lorem,
-                    ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi. Lorem,
-                    ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi.
-                </p>
-                <p class="px-sm-2 px-lg-5 pt-2 pb-5 m-0 align-middle">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi. Lorem,
-                    ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi. Lorem,
-                    ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi. Lorem,
-                    ipsum dolor sit amet consectetur adipisicing elit. Eaque nihil facilis praesentium ipsa laudantium obcaecati incidunt quaerat provident corporis. Ad tempora consectetur voluptatum voluptate eaque impedit sunt esse rem nisi.
-                </p>
+                <p class="px-sm-2 px-sm-2 px-lg-5 pt-3 pb-5 m-0 align-middle">RAPIDO! Decide cómo reaccionas:</p>
 
-            </div>
-            <div id="elecciones" class="col-lg-8 col-sm-12 my-4">
-                <a href="" class="btn btn3">Hover Me</a><a href="" class="btn btn3">Hover Me</a><a href="" class="btn btn3">Hover Me</a>
+                <div id="elecciones" class="col-lg-8 col-sm-12 mx-auto my-4">
+                    <a href="0002.html" class="btn btn-outline-secondary w-100 mx-auto my-1" role="button">Le haces señas con las manos para que se calme</a>
+                    <a href="0003.html" class="btn btn-outline-secondary w-100 mx-auto my-1" role="button">Sacas tu pistola mientras le dices que no hay necesidad de una pelea</a>
+                    <a href="0004.html" class="btn btn-outline-secondary w-100 mx-auto my-1" role="button">Sacas tu pistola y disparas a matar</a>
+                </div>
+
             </div>
 
         </section>
@@ -124,18 +128,10 @@
     <footer class="footer mt-auto">
 
         <div class="animated fadeIn delay-125s bg-dark-08 text-white py-2 align-middle text-center">
-            Copyright 2020 © Progressive.
+            <span class="text-muted">#0001 Rev 1.0 - </span> Copyright 2020 © Progressive.
 
-            <a href="#">
-                <i class="fas fa-rss-square text-danger"></i>
-            </a>
-
-            <a href="#">
-                <i class="fab fa-facebook-square text-primary"></i>
-            </a>
-
-            <a href="#">
-                <i class="fab fa-instagram"></i>
+            <a href="https://www.instagram.com/progressiveofi/" target="_blank" class="lico">
+                <i class="fab fa-instagram text-warning"></i>
             </a>
 
         </div>
@@ -156,7 +152,7 @@
                     <span id="mod1es" class="">
                         <h5 class="modal-title text-dark" id="formularioModalLabel">Contactanos</h5>
                     </span>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close" onmouseup="clearForm()" ontouchend="clearForm()">
+                    <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" onmouseup="clearForm()" ontouchend="clearForm()">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -270,8 +266,8 @@
                                     Comentario invalido.
                                 </div>
                                 <div class="modal-footer ">
-                                    <button id="mod18en " type="button " class="d-none btn btn-secondary " data-dismiss="modal " onmouseup="clearForm() " ontouchend="clearForm() ">Close</button>
-                                    <button id="mod18es " type="button " class="btn btn-secondary " data-dismiss="modal " onmouseup="clearForm() " ontouchend="clearForm() ">Cerrar</button>
+                                    <button id="mod18en " type="button " class="d-none btn btn-secondary " data-bs-dismiss="modal " onmouseup="clearForm() " ontouchend="clearForm() ">Close</button>
+                                    <button id="mod18es " type="button " class="btn btn-secondary " data-bs-dismiss="modal " onmouseup="clearForm() " ontouchend="clearForm() ">Cerrar</button>
                                     <button id="mod19en " type="button " class="d-none btn btn-primary " onmouseup="enviarMail() " ontouchend="enviarMail() ">Send</button>
                                     <button id="mod19es " type="button " class="btn btn-primary " onmouseup="enviarMail() " ontouchend="enviarMail() ">Enviar</button>
                                 </div>

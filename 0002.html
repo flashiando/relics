@@ -11,6 +11,11 @@
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
+    <!-- lightbox  css + jquery -->
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/src/css/lightbox.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js"></script>
+
     <script src="scripts.js"></script>
 
     <link rel="stylesheet" href="css/style.css">
@@ -94,37 +99,31 @@
     </nav>
 
 
-
     <main role="main" class="flex-shrink-0">
 
-        <section id="tapa2" class="animated fadeIn delay-075s d-flex flex-wrap justify-content-around mx-5 p-2">
+        <section id="generalWbackground" class="animated fadeIn delay-075s d-flex flex-wrap justify-content-around">
 
-            <div class="tarjeta my-5 p-4">
-                <div class="fondo fondo0001"></div>
-                <h2 class="tarjeTitulo">Checkpoint 1</h2>
-                <p class="p-3 textoTitulo">Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                <a href="0001.html" class="btn btn-outline-secondary w-100 botonTitulo" role="button">Enter Checkpoint</a>
-            </div>
+            <div id="entradas" class="col-lg-8 col-sm-12 mt-5 mb-4">
 
-            <div class="tarjeta my-5 p-4">
-                <div class="fondo fondo0002"></div>
-                <h1 class="tarjeTitulo">Checkpoint 2</h1>
-                <p class="p-3 textoTitulo">Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                <a href="0002.html" class="btn btn-outline-secondary w-100 botonTitulo" role="button">Enter Checkpoint</a>
-            </div>
+                <p class="pt-5 pb-0 px-sm-2 px-lg-5 text-end text-muted align-middle m-0">2021, Febrero 2</p>
+                <h1 class="px-sm-2 px-lg-5 pt-2 pb-4 m-0 align-middle titulos">#0002 . DIPS</h1>
+                <img src="images/reliquias0002.jpg" class="w-100 px-0">
 
-            <div class="tarjeta my-5 p-4">
-                <div class="fondo fondo0001"></div>
-                <h2 class="tarjeTitulo">Checkpoint 7</h2>
-                <p class="p-3 textoTitulo">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero, suscipit odio. Sequi architecto veritatis iure debitis labore dolorum sapiente, accusamus, amet, excepturi vero minima beatae ducimus ab libero est rem?</p>
-                <a href="0001.html" class="btn btn-outline-secondary w-100 botonTitulo" role="button">Enter Checkpoint</a>
-            </div>
+                <p class="px-sm-2 px-sm-2 px-lg-5 pt-5 pb-2 m-0 align-middle">- Tranquilo, vayamos afuera, charlemos - le dices en voz baja. No obstante ves como el extraño saca un arma parecida a un trabuco, y casi sin necesidad de apuntar dispara a tu pierna. Tratas de contener el dolor pero no puedes mas - AAAAAAGH!
+                    - gritas mientras ves como echa a correr por donde tú llegaste. Intentas ir tras él pero tu pierna no lo permite. Ya no ves mas al extraño. Improvisas unas vendas y tapas la herida pero te cuesta mucho moverte, aunque lentamente empiezas
+                    a ir rengueando por el mismo camino aun cuando sabes que no hay muchas posibilidades de salir vivo de ahi. Pasan unos minutos y escuchas un disparo y luego el grito desgarrador del extraño pidiendo ayuda y ladridos aullidos y gruñidos
+                    grotezcos. Sabes que es y que vienen por ti. haces unos pasos mas pero es inutil, los pasos de las bestias se escuchan acercándose. Estando en plena oscuridad ya se pueden distinguir un par de ojos que emiten una luz rojo intenso,
+                    luego otros. Te rodean, y aun con esa poca luz natural por el brillo de sus ojos ya puedes verlos bien, son DIP, lobos negros con largos colmillos como vampiros, con un aura oscura que parece emanar desde detras de sus cabezas hasta
+                    su cola. Los gruñidos se hacen cada vez mas intensos, sacas tu revolver y disparas al que esta mas cerca, probablemente hayas acertado el disparo porque sus ojos se cerraron y no lo vuelves a ver, pero el otro ya esta casi sobre ti,
+                    no hay forma de que escapes.
+                </p>
 
-            <div class="tarjeta my-5 p-4">
-                <div class="fondo fondo0001"></div>
-                <h2 class="tarjeTitulo">Checkpoint 8</h2>
-                <p class="p-3 textoTitulo">Aenean lacinia bibendum nulla sed consectetur. Donec ullamcorper nulla non metus auctor fringilla.</p>
-                <a href="0001.html" class="btn btn-outline-secondary w-100 botonTitulo" role="button">Enter Checkpoint</a>
+                <p class="px-sm-2 px-sm-2 px-lg-5 pt-3 pb-5 m-0 align-middle">Has muerto</p>
+
+                <div id="elecciones" class="col-lg-8 col-sm-12 mx-auto my-4">
+                    <a href="0001.html" class="btn btn-outline-secondary w-100 mx-auto my-1" role="button">Revive al principio de la historia</a>
+                </div>
+
             </div>
 
         </section>
@@ -133,11 +132,13 @@
 
     <footer class="footer mt-auto">
 
-        <div class="animated fadeIn delay-125s bg-dark-08 text-white py-2 align-middle text-center text-uppercase">
-            Copyright 2020 © Progressive.
+        <div class="animated fadeIn delay-125s bg-dark-08 text-white py-2 align-middle text-center">
+            <span class="text-muted">#0002 Rev 1.0 - </span> Copyright 2020 © Progressive.
+
             <a href="https://www.instagram.com/progressiveofi/" target="_blank" class="lico">
                 <i class="fab fa-instagram text-warning"></i>
             </a>
+
         </div>
 
     </footer>
@@ -146,7 +147,7 @@
     <!-- Modal contacto -->
 
     <div class="modal fade" id="formularioModal" data-backdrop="static" aria-hidden="true" tabindex="-1" role="dialog" aria-labelledby="formularioModalLabel" aria-hidden="true">
-        <div id="custom" class="modal-dialog modal-lg modal-dialog-centered align-items-center" role="document">
+        <div id="custom" class="modal-dialog modal-lg modal-dialog-centered" role="document">
             <div class="modal-content">
 
                 <div class="modal-header">
@@ -241,39 +242,39 @@
                             </div>
 
                             <div id="datosTelefono" class="form-row col-12 d-none">
-                                <div class="form-group col-sm-12 col-lg-6">
-                                    <label id="mod13en" for="inputPhone" class="d-none text-dark">Phone</label>
-                                    <label id="mod13es" for="inputPhone" class="text-dark">Telefono</label>
-                                    <input name="telefono" type="text" class="form-control" id="inputPhone" required>
+                                <div class="form-group col-sm-12 col-lg-6" ">
+                                    <label id="mod13en " for="inputPhone " class="d-none text-dark ">Phone</label>
+                                    <label id="mod13es " for="inputPhone " class="text-dark " ">Telefono</label>
+                                    <input name="telefono" type="text " class="form-control " id="inputPhone " required>
                                 </div>
-                                <div class="form-group col-sm-12 col-lg-6">
-                                    <label id="mod14en" for="inputTime" class="d-none text-dark">Preferred calling times</label>
-                                    <label id="mod14es" for="inputTime" class="text-dark">Hora que desea recibir la llamada</label>
-                                    <input name="time" type="text" class="form-control" id="inputTime" required>
+                                <div class="form-group col-sm-12 col-lg-6 " ">
+                                    <label id="mod14en " for="inputTime " class="d-none text-dark ">Preferred calling times</label>
+                                    <label id="mod14es " for="inputTime " class="text-dark ">Hora que desea recibir la llamada</label>
+                                    <input name="time " type="text " class="form-control " id="inputTime " required>
                                 </div>
                             </div>
 
-                            <div class="form-group mb-0 col-12">
-                                <label id="mod15en" class="d-none text-dark" for="Textarea1">Comments</label>
-                                <label id="mod15es" class="text-dark" for="Textarea1">Comentarios</label>
-                                <textarea name="mensaje" class="form-control" id="Textarea1" rows="3" required></textarea>
-                                <div id="mod16en" class="d-none valid-feedback pb-3">
+                            <div class="form-group col-12 ">
+                                <label id="mod15en " class="d-none text-dark " for="Textarea1 ">Comments</label>
+                                <label id="mod15es " class="text-dark " for="Textarea1 ">Comentarios</label>
+                                <textarea name="mensaje " class="form-control " id="Textarea1 " rows="3 " required></textarea>
+                                <div id="mod16en " class="d-none valid-feedback pb-3 ">
                                     Looks good!
                                 </div>
-                                <div id="mod16es" class="valid-feedback pb-3">
+                                <div id="mod16es " class="valid-feedback pb-3 ">
                                     Se ve bien!
                                 </div>
-                                <div id="mod17en" class="d-none invalid-feedback pb-3">
+                                <div id="mod17en " class="d-none invalid-feedback pb-3 ">
                                     Invalid comments.
                                 </div>
-                                <div id="mod17es" class="invalid-feedback pb-3">
+                                <div id="mod17es " class="invalid-feedback pb-3 ">
                                     Comentario invalido.
                                 </div>
-                                <div class="modal-footer py-2">
-                                    <button id="mod18en" type="button" class="d-none btn btn-secondary" data-bs-dismiss="modal" onmouseup="clearForm()" ontouchend="clearForm()">Close</button>
-                                    <button id="mod18es" type="button" class="btn btn-secondary mx-2 my-0" data-bs-dismiss="modal" onmouseup="clearForm()" ontouchend="clearForm()">Cerrar</button>
-                                    <button id="mod19en" type="button" class="d-none btn btn-primary" onmouseup="enviarMail()" ontouchend="enviarMail()">Send</button>
-                                    <button id="mod19es" type="button" class="btn btn-primary mx-2 my-0" onmouseup="enviarMail()" ontouchend="enviarMail()">Enviar</button>
+                                <div class="modal-footer ">
+                                    <button id="mod18en " type="button " class="d-none btn btn-secondary " data-bs-dismiss="modal " onmouseup="clearForm() " ontouchend="clearForm() ">Close</button>
+                                    <button id="mod18es " type="button " class="btn btn-secondary " data-bs-dismiss="modal " onmouseup="clearForm() " ontouchend="clearForm() ">Cerrar</button>
+                                    <button id="mod19en " type="button " class="d-none btn btn-primary " onmouseup="enviarMail() " ontouchend="enviarMail() ">Send</button>
+                                    <button id="mod19es " type="button " class="btn btn-primary " onmouseup="enviarMail() " ontouchend="enviarMail() ">Enviar</button>
                                 </div>
                             </div>
                     </form>
@@ -283,7 +284,7 @@
         </div>
     </div>
 
-
+    <script src="https://cdn.jsdelivr.net/npm/lightbox2@2.11.3/src/js/lightbox.min.js "></script>
 </body>
 
 </html>

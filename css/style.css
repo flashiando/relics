@@ -80,8 +80,12 @@ a.fancy-link:visited {
 
 /* footer */
 
-footer {
+.footer {
     font-family: 'Oswald', sans-serif;
+}
+
+.footer .lico {
+    text-decoration: none;
 }
 
 
@@ -103,12 +107,17 @@ footer {
     margin-bottom: 10vh;
     border: thick solid black;
     font-size: 12px;
+    min-height: 400px;
 }
 
 @media screen and (min-width: 601px) {
     #entradas {
         font-size: 16px;
     }
+}
+
+.parraf0 {
+    text-align: end;
 }
 
 .titulos {
@@ -128,116 +137,101 @@ footer {
 
 /* boton */
 
-.btn {
+.buttonIndex {
+    margin-top: 450px;
+}
+
+
+/* tarjetas2 */
+
+
+/* tarjetas2 */
+
+#tapa2 {
+    min-height: 70vh;
+}
+
+.tarjeta {
+    border-radius: 20px;
+    height: 550px;
+    width: 300px;
     position: relative;
-    display: block;
-    color: white;
-    font-size: 14px;
-    font-family: 'Oswald', sans-serif;
+}
+
+.fondo {
+    border-radius: 20px;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: filter 1000ms ease-in-out, transform 500ms ease-in-out, box-shadow 2000ms ease-in-out;
+    filter: blur(0px);
+    z-index: 1;
+}
+
+@media screen and (min-width: 601px) {
+    .fondo {
+        filter: blur(8px);
+    }
+}
+
+.fondo0001 {
+    background: url('../images/leer0001.jpg') no-repeat;
+}
+
+.fondo0002 {
+    background: url('../images/leer0002.jpg') no-repeat;
+}
+
+.tarjeta:hover .fondo {
+    transform: scale(1.05) translateZ(0);
+    filter: blur(0px);
+    -webkit-box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.65);
+}
+
+.tarjeTitulo {
+    margin-top: 250px;
+    font-size: 24px;
+    position: relative;
+    z-index: 2;
+}
+
+.textoTitulo {
+    position: relative;
+    z-index: 2;
+    height: 150px;
+    overflow: hidden;
+}
+
+.botonTitulo {
+    position: relative;
+    z-index: 2;
+}
+
+
+/* galeria */
+
+
+/* galeria */
+
+.itemGaleria {
     text-decoration: none;
-    margin: 30px 0;
-    border: 2px solid #ee6352;
-    padding: 14px 60px;
-    text-transform: uppercase;
-    overflow: hidden;
-    transition: all 1s ease;
 }
 
-.btn::before {
-    background: #ee6352;
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
-    transition: all 0.6s ease;
+.imgGale {
+    border-radius: 20px;
+    transform-origin: center;
+    transform: scale(1) translateZ(0);
+    transition: transform 300ms ease-in-out;
 }
 
-.btn1 {
-    color: black;
-    width: 250px;
-    height: 55px;
+.imgGale:hover {
+    transform: scale(1.1) translateZ(0);
 }
-
-.btn1:hover {
-    color: white;
-}
-
-.btn1::before {
-    width: 260%;
-    height: 0%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.btn1:hover::before {
-    height: 1000%;
-}
-
-.btn3::before {
-    width: 100%;
-    height: 0%;
-    transform: translate(-50%, -50%) rotate(45deg);
-}
-
-.btn3:hover::before {
-    height: 2000%;
-}
-
-
-/* tarjetas */
-
-
-/*
-
-.card {
-    cursor: pointer;
-    width: 365px;
-    height: 530px;
-    background: transparent;
-    border: thick solid black;
-}
-
-.front,
-.back {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    backface-visibility: hidden;
-    position: absolute;
-    transition: transform 0.6s linear;
-}
-
-.front img {
-    height: 100%;
-}
-
-.front {
-    transform: perspective(700px) rotateY(0deg);
-}
-
-.back {
-    background: white;
-    transform: perspective(700px) rotateY(180deg);
-}
-
-.back-content {
-    color: black;
-    text-align: center;
-    width: 90%;
-    height: 93%;
-    border: thin solid black;
-}
-
-.card:hover>.front {
-    transform: perspective(700px) rotateY(-180deg);
-}
-
-.card:hover>.back {
-    transform: perspective(700px) rotateY(0deg);
-}
-
-*/
-
-
-/* tarjetas */
