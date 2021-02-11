@@ -1,3 +1,5 @@
+// sin usar por ahora si no se usa borrar
+
 function showContent() {
     element = document.getElementById("datosTelefono");
     check = document.getElementById("defaultCheck1");
@@ -7,6 +9,8 @@ function showContent() {
         element.classList.add("d-none");
     }
 }
+
+//sin usar por ahora si no se usa borrar
 
 function enviarMail() {
     if (document.getElementById("validationCustom01").value != "" && document.getElementById("exampleInputEmail1").value != "" &&
