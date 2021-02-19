@@ -13,8 +13,8 @@ function showContent() {
 //sin usar por ahora si no se usa borrar
 
 function enviarMail() {
-    if (document.getElementById("validationCustom01").value != "" && document.getElementById("exampleInputEmail1").value != "" &&
-        document.getElementById("Textarea1").value != "" && document.getElementById("validationCustom02").value != "") {
+    if (document.getElementById("validationCustom01").value != "" && document.getElementById("InputEmail1").value != "" &&
+        document.getElementById("Textarea1").value != "") {
         if (document.getElementById("defaultCheck1").checked == true) {
             if (document.getElementById("inputPhone").value != "" && document.getElementById("inputTime").value != "") {
                 document.getElementById("myForm").submit();
@@ -59,3 +59,16 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 console.log("popovers ok")
+
+function translate() {
+
+    document.querySelectorAll(".esp").forEach((el) => {
+        el.classList.toggle('d-none');
+    });
+    document.querySelectorAll(".eng").forEach((el) => {
+        el.classList.toggle('d-none');
+    });
+
+}
+
+console.log("traducciones ok");

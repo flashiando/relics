@@ -228,3 +228,11 @@ a.fancy-link:visited {
         width: 400px;
     }
 }
+
+
+/* banderas */
+
+.banderita {
+    width: 16px;
+    height: 16px;
+}
