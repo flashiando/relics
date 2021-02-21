@@ -1,5 +1,4 @@
 var resultadoIdioma = localStorage.getItem("idiomaX");
-console.log("ahora esta en" + localStorage.getItem("idiomaX"));
 
 window.onload = (event) => {
 
@@ -67,8 +66,6 @@ function clearForm() {
     document.getElementById("myForm").classList.remove("was-validated");
 }
 
-console.log("form ok");
-
 document.addEventListener("DOMContentLoaded", function(event) {
     var popoverTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="popover"]'))
     var popoverList = popoverTriggerList.map(function(popoverTriggerEl) {
@@ -93,22 +90,18 @@ function translate() {
 
         resultadoIdioma = "es";
         localStorage.setItem("idiomaX", "es");
-        console.log("ahora esta en" + localStorage.getItem("idiomaX"));
 
     } else {
 
         document.querySelectorAll(".esp").forEach((el) => {
             el.classList.add('d-none');
-            console.log('p1');
         });
         document.querySelectorAll(".eng").forEach((el) => {
             el.classList.remove('d-none');
-            console.log('p2');
         });
 
         resultadoIdioma = "en";
         localStorage.setItem("idiomaX", "en");
-        console.log("ahora esta en" + localStorage.getItem("idiomaX"));
 
     }
 }
