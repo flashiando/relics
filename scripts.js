@@ -1,16 +1,42 @@
-// sin usar por ahora si no se usa borrar
+var resultadoIdioma = localStorage.getItem("idiomaX");
+console.log("ahora esta en" + localStorage.getItem("idiomaX"));
 
-function showContent() {
-    element = document.getElementById("datosTelefono");
-    check = document.getElementById("defaultCheck1");
-    if (check.checked) {
-        element.classList.remove("d-none");
-    } else {
-        element.classList.add("d-none");
+window.onload = (event) => {
+
+    if (resultadoIdioma == "") {
+
+        var lang = navigator.language;
+        var reducidoIdioma = lang.split("-");
+
+        localStorage.setItem("idiomaX", reducidoIdioma[0]);
+
+        resultadoIdioma = localStorage.getItem("idiomaX");
+
+    } else if (resultadoIdioma == "es") {
+
+        document.querySelectorAll(".eng").forEach((el) => {
+            el.classList.add('d-none');
+        });
+        document.querySelectorAll(".esp").forEach((el) => {
+            el.classList.remove('d-none');
+        });
+
+        localStorage.setItem("idiomaX", "es");
+
+    } else if (resultadoIdioma == "en") {
+
+        document.querySelectorAll(".esp").forEach((el) => {
+            el.classList.add('d-none');
+        });
+        document.querySelectorAll(".eng").forEach((el) => {
+            el.classList.remove('d-none');
+        });
+
+        localStorage.setItem("idiomaX", "en");
+
     }
-}
 
-//sin usar por ahora si no se usa borrar
+}
 
 function enviarMail() {
     if (document.getElementById("validationCustom01").value != "" && document.getElementById("InputEmail1").value != "" &&
@@ -21,14 +47,12 @@ function enviarMail() {
                 document.getElementById("myForm").reset();
                 document.getElementById("myForm").classList.add("d-none");
                 document.getElementById("sentSuccess").classList.remove("d-none");
-                showContent();
             }
         } else {
             document.getElementById("myForm").submit();
             document.getElementById("myForm").reset();
             document.getElementById("myForm").classList.add("d-none");
             document.getElementById("sentSuccess").classList.remove("d-none");
-            showContent();
         }
 
     } else {
@@ -38,7 +62,6 @@ function enviarMail() {
 
 function clearForm() {
     document.getElementById("myForm").reset();
-    showContent();
     document.getElementById("sentSuccess").classList.add("d-none");
     document.getElementById("myForm").classList.remove("d-none");
     document.getElementById("myForm").classList.remove("was-validated");
@@ -58,17 +81,67 @@ document.addEventListener("DOMContentLoaded", function(event) {
     })
 });
 
-console.log("popovers ok")
-
 function translate() {
+    if (resultadoIdioma == "en") {
 
-    document.querySelectorAll(".esp").forEach((el) => {
-        el.classList.toggle('d-none');
+        document.querySelectorAll(".eng").forEach((el) => {
+            el.classList.add('d-none');
+        });
+        document.querySelectorAll(".esp").forEach((el) => {
+            el.classList.remove('d-none');
+        });
+
+        resultadoIdioma = "es";
+        localStorage.setItem("idiomaX", "es");
+        console.log("ahora esta en" + localStorage.getItem("idiomaX"));
+
+    } else {
+
+        document.querySelectorAll(".esp").forEach((el) => {
+            el.classList.add('d-none');
+            console.log('p1');
+        });
+        document.querySelectorAll(".eng").forEach((el) => {
+            el.classList.remove('d-none');
+            console.log('p2');
+        });
+
+        resultadoIdioma = "en";
+        localStorage.setItem("idiomaX", "en");
+        console.log("ahora esta en" + localStorage.getItem("idiomaX"));
+
+    }
+}
+
+function galAll() {
+
+    document.querySelectorAll(".gal1").forEach((el) => {
+        el.classList.remove('d-none');
     });
-    document.querySelectorAll(".eng").forEach((el) => {
-        el.classList.toggle('d-none');
+    document.querySelectorAll(".gal0").forEach((el) => {
+        el.classList.remove('d-none');
     });
 
 }
 
-console.log("traducciones ok");
+function gal1() {
+
+    document.querySelectorAll(".gal1").forEach((el) => {
+        el.classList.remove('d-none');
+    });
+    document.querySelectorAll(".gal0").forEach((el) => {
+        el.classList.add('d-none');
+    });
+
+}
+
+function gal0() {
+
+    document.querySelectorAll(".gal0").forEach((el) => {
+        el.classList.remove('d-none');
+    });
+    document.querySelectorAll(".gal1").forEach((el) => {
+        el.classList.add('d-none');
+    });
+
+}
