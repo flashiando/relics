@@ -38,6 +38,7 @@ window.onload = (event) => {
 }
 
 function enviarMail() {
+
     if (document.getElementById("validationCustom01").value != "" && document.getElementById("InputEmail1").value != "" &&
         document.getElementById("Textarea1").value != "") {
         if (document.getElementById("defaultCheck1").checked == true) {
@@ -57,6 +58,7 @@ function enviarMail() {
     } else {
         document.getElementById("myForm").classList.add("was-validated");
     }
+
 }
 
 function clearForm() {
