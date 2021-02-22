@@ -80,7 +80,7 @@ a.fancy-link:visited {
     font-family: 'Oswald', sans-serif;
 }
 
-.footer .lico {
+.lico {
     text-decoration: none;
 }
 
@@ -120,6 +120,64 @@ a.fancy-link:visited {
 @media screen and (min-width: 601px) {
     .titulos {
         font-size: 40px;
+    }
+}
+
+
+/* equipo */
+
+#mainEquipo {
+    color: black;
+    font-size: 12px;
+    min-height: 400px;
+}
+
+@media screen and (min-width: 601px) {
+    #mainEquipo {
+        font-size: 16px;
+    }
+}
+
+#eqiz {
+    background: blue;
+}
+
+#eqde {
+    font-family: 'Oswald', sans-serif;
+}
+
+.teamBadge {
+    border-radius: 40px;
+    width: 150px;
+    height: 300px;
+}
+
+.fotoEquipo {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.licoEquipo {
+    text-decoration: none;
+    font-size: 24px;
+}
+
+@media screen and (min-width: 601px) {
+    .teamBadge {
+        border-radius: 40px;
+        width: 200px;
+        height: 350px;
+        font-size: 14px;
+    }
+    .fotoEquipo {
+        border-radius: 50%;
+        width: 150px;
+        height: 150px;
+    }
+    .licoEquipo {
+        text-decoration: none;
+        font-size: 32px;
     }
 }
 
