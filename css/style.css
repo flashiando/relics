@@ -138,9 +138,7 @@ a.fancy-link:visited {
     }
 }
 
-#eqiz {
-    background: blue;
-}
+#eqiz {}
 
 #eqde {
     font-family: 'Oswald', sans-serif;
@@ -179,6 +177,26 @@ a.fancy-link:visited {
         text-decoration: none;
         font-size: 32px;
     }
+}
+
+.blogEntry {
+    background-color: rgb(160, 160, 160);
+    border: medium solid black;
+}
+
+.blogIz {
+    min-height: 250px;
+}
+
+.blogDe {
+    min-height: 400px;
+    background: white;
+}
+
+.fotoBlog {
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
 }
 
 
