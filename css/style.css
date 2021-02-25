@@ -85,6 +85,15 @@ a.fancy-link:visited {
 }
 
 
+/* index */
+
+.cuadradito {
+    width: 150px;
+    min-height: 150px;
+    border-radius: 20px;
+}
+
+
 /* principal */
 
 #generalWbackground {
@@ -137,8 +146,6 @@ a.fancy-link:visited {
         font-size: 16px;
     }
 }
-
-#eqiz {}
 
 #eqde {
     font-family: 'Oswald', sans-serif;

@@ -37,6 +37,8 @@ window.onload = (event) => {
 
 }
 
+
+
 function enviarMail() {
 
     if (document.getElementById("validationCustom01").value != "" && document.getElementById("InputEmail1").value != "" &&
