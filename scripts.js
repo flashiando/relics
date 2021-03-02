@@ -1,7 +1,6 @@
 var resultadoIdioma = localStorage.getItem("idiomaX");
 
 window.onload = (event) => {
-
     if (resultadoIdioma == "") {
 
         var lang = navigator.language;
@@ -36,8 +35,6 @@ window.onload = (event) => {
     }
 
 }
-
-
 
 function enviarMail() {
 

@@ -88,9 +88,50 @@ a.fancy-link:visited {
 /* index */
 
 .cuadradito {
-    width: 150px;
+    min-width: 150px;
+    max-width: 150px;
     min-height: 150px;
-    border-radius: 20px;
+    max-height: 150px;
+    border-radius: 30px;
+}
+
+.textoIndex {
+    padding: 5% 12%;
+}
+
+.letraPatreon {
+    font-size: 100px;
+}
+
+.flIndex {
+    color: white;
+    background-color: grey;
+    transition: background-color 700ms ease-in-out;
+}
+
+.flIndex:hover {
+    background-color: darkgrey;
+}
+
+a.flIndex:hover {
+    color: whitesmoke;
+}
+
+a.flIndex:visited {
+    color: whitesmoke;
+}
+
+.signoUnknown {
+    font-size: 100px;
+}
+
+@media screen and (min-width: 601px) {
+    .textoIndex {
+        padding: 5% 20%;
+    }
+    .signoUnknown {
+        font-size: 150px;
+    }
 }
 
 
