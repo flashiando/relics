@@ -93,10 +93,40 @@ a.fancy-link:visited {
     min-height: 150px;
     max-height: 150px;
     border-radius: 30px;
+    -webkit-box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.65);
+    -moz-box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.65);
+    box-shadow: 0px 15px 10px 0px rgba(0, 0, 0, 0.65);
 }
 
 .textoIndex {
     padding: 5% 12%;
+}
+
+.startBanner {
+    min-width: 250px;
+    min-height: 120px;
+    border-radius: 30px;
+    background: no-repeat 50% 50% /100% url(../images/reliquias0001.jpg);
+    color: white;
+    transition: all 1200ms ease-in-out;
+    border: solid thin white;
+}
+
+.startBanner:hover {
+    background: no-repeat 70% 50% /200% url(../images/reliquias0001.jpg);
+}
+
+.startBanner2 {
+    background: no-repeat 50% 30% /100% url(../images/reliquias000u.jpg);
+}
+
+.startBanner2:hover {
+    background: no-repeat 70% 25% /200% url(../images/reliquias000u.jpg);
+}
+
+.textBanner {
+    padding-top: 80px;
+    padding-right: 15px;
 }
 
 .letraPatreon {
@@ -131,6 +161,14 @@ a.flIndex:visited {
     }
     .signoUnknown {
         font-size: 150px;
+    }
+    .startBanner {
+        min-width: 550px;
+        min-height: 110px;
+        border: none;
+    }
+    .textBanner {
+        padding-right: 25px;
     }
 }
 
