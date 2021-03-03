@@ -92,6 +92,13 @@ a.fancy-link:visited {
     padding-bottom: 7px;
 }
 
+@media screen and (min-width: 601px) {
+    .miniRelics {
+        width: 90px;
+        padding-bottom: 7px;
+    }
+}
+
 .cuadradito {
     min-width: 150px;
     max-width: 150px;
