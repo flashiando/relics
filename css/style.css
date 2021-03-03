@@ -87,6 +87,11 @@ a.fancy-link:visited {
 
 /* index */
 
+.miniRelics {
+    width: 80px;
+    padding-bottom: 7px;
+}
+
 .cuadradito {
     min-width: 150px;
     max-width: 150px;
