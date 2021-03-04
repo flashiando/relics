@@ -1,4 +1,4 @@
-var el = document.getElementsByTagName("canvas");
+var el = document.getElementsByTagName("nav");
 el.addEventListener("touchstart", handleStart, false);
 
 var resultadoIdioma = localStorage.getItem("idiomaX");
