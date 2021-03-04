@@ -1,6 +1,3 @@
-var el = document.getElementsByTagName("nav");
-el.addEventListener("touchstart", handleStart, false);
-
 var resultadoIdioma = localStorage.getItem("idiomaX");
 
 window.onload = (event) => {
