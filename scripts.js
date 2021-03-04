@@ -80,6 +80,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
 });
 
 function translate() {
+    alert("click");
     if (resultadoIdioma == "en") {
 
         document.querySelectorAll(".eng").forEach((el) => {
