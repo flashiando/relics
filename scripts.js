@@ -1,3 +1,6 @@
+var el = document.getElementsByTagName("canvas");
+el.addEventListener("touchstart", handleStart, false);
+
 var resultadoIdioma = localStorage.getItem("idiomaX");
 
 window.onload = (event) => {
